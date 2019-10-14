@@ -13,7 +13,7 @@ face_haar_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 cap=cv2.VideoCapture(0)
 
 while True:
-    ret,test_img=cap.read()# captures frame and returns boolean value and captured image
+    ret,test_img=cap.read()
     if not ret:
         continue
     gray_img= cv2.cvtColor(test_img, cv2.COLOR_BGR2GRAY)
